@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cartpage.css" />
+    <title>Checkout</title>
+    <script
+      src="https://kit.fontawesome.com/2a62b8eba4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="header">
+      <a href="index.html"
+        ><img src="images/amazon-logo.png" class="header-logo" alt=""
+      /></a>
+      <div class="header-middle-section">
+        Checkout (<span class="js-total-cart-quantity"></span>)
+      </div>
+      <i class="fa-solid fa-lock fa-md" style="color: #ebebeb"></i>
+    </nav>
+
+    <h2 class="order-title">Review Your Order</h2>
+    <main class="main-checkout">
+      <section class="cart-items"></section>
+
+      <!--CART SUMMARY BOX-->
+      <section class="cart-summary">
+        <h3 class="summary-title">Order Summary</h3>
+        <div class="payment-summary-row">
+          <div>
+            Items (<span class="quantity js-total-cart-quantity-summary">2</span
+            >):
+          </div>
+          <div class="price-summary-width js-items-price">$23.23</div>
+        </div>
+        <div class="payment-summary-row padding">
+          <div>Shipping & handling:</div>
+          <div
+            class="last-border price-summary-width js-price-shipping-summary"
+          >
+            $0
+          </div>
+        </div>
+
+        <div class="payment-summary-row more-margin">
+          <div>Total before tax:</div>
+          <div class="price-summary-width js-total-before-tax">$23.23</div>
+        </div>
+
+        <div class="payment-summary-row last-border">
+          <div>Estimated tax (10%):</div>
+          <div class="price-summary-width js-estimated-tax">$23.23</div>
+        </div>
+
+        <div class="payment-summary-row">
+          <div class="full-order">Order total:</div>
+          <div class="full-order js-order-total">$23.23</div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="secondaryPage.js"></script>
+  </body>
+</html>
