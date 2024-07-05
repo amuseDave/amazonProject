@@ -234,27 +234,37 @@ nav {
   }
 }
 
-.amuse-dave-portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 5px;
-  border: 2px solid;
-  background-color: rgba(47, 58, 68, 0.404);
-  position: relative;
-}
-.amuse-dave-portfolio a {
-  text-decoration: none;
-  font-weight: 500;
-  color: rgb(75, 49, 2);
-  cursor: pointer;
-}
 .pointer {
   position: absolute;
-  right: -10;
-  bottom: -5;
-  z-index: 100;
+  z-index: 10000;
+  bottom: -10px;
+  left: 25px;
+}
+.tool-tip {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  bottom: 20px;
+  background-color: rgba(151, 151, 151, 0.747);
+  border-radius: 10px;
+  transform: rotateZ(-4deg);
+  height: 20px;
+  text-align: center;
+  display: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: rgb(0, 255, 255);
+}
+.portfolio-link:hover .tool-tip {
+  display: block;
+}
+.current-user-picture {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+
+  border-radius: 100%;
 }

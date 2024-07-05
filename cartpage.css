@@ -271,8 +271,45 @@ p {
   bottom: -5;
   z-index: 100;
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .header-logo {
     display: none;
   }
+}
+.pointer {
+  position: absolute;
+  z-index: 10000;
+  bottom: 00px;
+  left: 25px;
+}
+.tool-tip {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  bottom: 20px;
+  background-color: rgba(151, 151, 151, 0.747);
+  border-radius: 10px;
+  transform: rotateZ(-4deg);
+  height: 20px;
+  text-align: center;
+  display: none;
+  transition: 0.5s all ease-in-out;
+  font-size: 16px;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: rgb(0, 255, 255);
+  position: absolute;
+  left: 0;
+}
+.portfolio-link:hover .tool-tip {
+  display: block;
+}
+.current-user-picture {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+
+  border-radius: 100%;
 }
