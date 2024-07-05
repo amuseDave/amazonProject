@@ -226,3 +226,35 @@ nav {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .nav-left {
+    width: 50px;
+    display: none;
+  }
+}
+
+.amuse-dave-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: rgba(47, 58, 68, 0.404);
+  position: relative;
+}
+.amuse-dave-portfolio a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(75, 49, 2);
+  cursor: pointer;
+}
+.pointer {
+  position: absolute;
+  right: -10;
+  bottom: -5;
+  z-index: 100;
+}
